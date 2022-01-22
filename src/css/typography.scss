@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;300;700&display=swap');
+
+
+// font-family: 'Alata', sans-serif;
+// font-family: 'Josefin Sans', sans-serif;
+
+// fonts and size
+$body-font: "Alata";
+$header-font: "Josefin Sans";
+
+$title-font: "Josefin Sans, sans-serif";
+$body-font: "Alata, sans-serif";
+$h1-size: 96px;
+$h2-size: 64px;
+$h3-size: 32px;
+$body-size: 15px;
+
+body {
+  font-family: $body-font;
+  font-size: $body-size;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: $h1-size;
+}

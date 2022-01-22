@@ -1,0 +1,43 @@
+@import "reset";
+@import "typography";
+
+
+// colors
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$dark-gray: hsl(0, 0%, 55%);
+$darker-gray: hsl(0, 0%, 41%);
+
+
+// media query
+$mq-x-large: 1440px;
+$mq-large: 800px;
+$mq-medium: 600px;
+$mq-small: 375px;
+
+
+// use @include to use mixins
+@mixin drop-shadow($color) {
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px $color;
+}
+
+@mixin mq($width) {
+  @media (max-width: $width) {
+    // use @content - will be replaced when used
+    @content;
+  }
+}
+
+@mixin vertically-middle() {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: $white;
+  color: white;
+
+}
