@@ -14,7 +14,11 @@ const browserSync = require("browser-sync");
 sass.compiler = require("node-sass")
 
 function runSass() {
-  return src("src/css/*")
+  return src([
+    "src/css/reset.css",
+    "src/css/typography.scss",
+    "src/css/styles.scss"
+  ])
   .pipe(sourcemaps.init())
   .pipe(sass())
   .pipe(
@@ -55,7 +59,11 @@ function watchSass() {
   })
 
   watch("src/*.html", html).on("change", browserSync.reload)
-  watch("src/css/styles.scss", runSass)
+  watch([
+    "src/css/reset.css",
+    "src/css/typography.scss",
+    "src/css/styles.scss"
+  ], runSass)
   watch("src/img/*", img)
   watch("src/img/desktop/*", imgDesktop)
   watch("src/img/mobile/*", imgMobile)

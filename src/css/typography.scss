@@ -5,11 +5,11 @@
 // font-family: 'Josefin Sans', sans-serif;
 
 // fonts and size
-$body-font: "Alata";
-$header-font: "Josefin Sans";
+// $body-font: "Alata";
+// $header-font: "Josefin Sans";
 
-$title-font: "Josefin Sans, sans-serif";
-$body-font: "Alata, sans-serif";
+$title-font: "Josefin Sans", sans-serif;
+$body-font: "Alata", sans-serif;
 $h1-size: 96px;
 $h2-size: 64px;
 $h3-size: 32px;
@@ -23,4 +23,8 @@ body {
 
 h1 {
   font-size: $h1-size;
+  font-weight: 300;
+  line-height: 1;
+  font-family: $title-font;
+  text-transform: uppercase;
 }

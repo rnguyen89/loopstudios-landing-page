@@ -8,6 +8,14 @@ $black: hsl(0, 0%, 0%);
 $dark-gray: hsl(0, 0%, 55%);
 $darker-gray: hsl(0, 0%, 41%);
 
+// spacing
+
+$main-spacing: 64px;
+$small-spacing: 8px;
+$gap-spacing: 40px;
+$header-height: 80px;
+$hero-spacing: 240px;
+$centered-width: 50%;
 
 // media query
 $mq-x-large: 1440px;
@@ -36,8 +44,51 @@ $mq-small: 375px;
   justify-content: center;
 }
 
+// @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;300;700&display=swap');
+
 body {
   background-color: $white;
   color: white;
 
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: $header-height;
+  padding: 0 $main-spacing;
+
+  nav a {
+    text-decoration: none;
+    color: $white;
+    margin-left: $small-spacing;
+
+  }
+}
+
+.hero {
+  background: no-repeat center url("/img/desktop/image-hero.jpg");
+  // background-image: url("/img/desktop/image-hero.jpg");
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
+  height: 80vh;
+  height: 60vh;
+  background-size: cover;
+
+  h1 {
+    border: solid 1px white;
+    width: 60%;
+    padding: 16px;
+
+  }
 }
