@@ -76,7 +76,12 @@ header {
   nav a {
     color: $white;
     margin-left: $small-spacing;
+    transition: all linear .2s;
 
+    &:hover {
+      color: $white;
+      border-bottom: 4px solid $white;
+  }
   }
 }
 
@@ -133,6 +138,8 @@ header {
 
 .section-2-grid {
   padding: 0 64px;
+  margin-bottom: $hero-spacing;
+
   
   .section-2-header {
     display: flex;
