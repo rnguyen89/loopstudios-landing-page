@@ -77,12 +77,10 @@ header {
 
 .hero {
   background: no-repeat center url("/img/desktop/image-hero.jpg");
-  // background-image: url("/img/desktop/image-hero.jpg");
   display: flex;
   align-items: center;
   padding: 0 64px;
-  height: 80vh;
-  height: 60vh;
+  height: 100vh;
   background-size: cover;
 
   h1 {
