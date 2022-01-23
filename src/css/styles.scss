@@ -222,3 +222,56 @@ header {
 .fisheye {
   background-image: url("/img/desktop/image-fisheye.jpg");
 }
+
+
+// footer
+
+footer {
+  background-color: $black;
+  padding-top: $main-spacing;
+
+
+  .footer-header, .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $main-spacing;
+  }
+
+  .footer-header {
+    margin-bottom: $medium-spacing;
+
+    .footer-social a {
+      margin-left: $medium-spacing;
+    }
+  }
+
+  .footer-nav nav a {
+    
+    color: $dark-gray;
+    margin-right: $medium-spacing;
+    transition: all linear .2s;
+
+    &:hover {
+      color: $white;
+      border-bottom: 4px solid $white;
+  }
+
+  }
+
+  .attribution {
+    padding: $large-spacing 0;
+    text-align: center;
+
+    a {
+      color: $dark-gray;
+      transition: all linear .2s;
+
+      &:hover {
+        color: $white;
+        border-bottom: 4px solid $white;
+    }
+    }
+  }
+
+}
