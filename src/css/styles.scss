@@ -12,6 +12,8 @@ $darker-gray: hsl(0, 0%, 41%);
 
 $main-spacing: 64px;
 $small-spacing: 8px;
+$medium-spacing: 16px;
+$large-spacing: 32px;
 $gap-spacing: 40px;
 $header-height: 80px;
 $hero-spacing: 240px;
@@ -52,6 +54,10 @@ body {
 
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -68,7 +74,6 @@ header {
   padding: 0 $main-spacing;
 
   nav a {
-    text-decoration: none;
     color: $white;
     margin-left: $small-spacing;
 
@@ -101,6 +106,7 @@ header {
 
   .img-vr {
     grid-column: 1/9;
+    width: 880px;
   }
 
   .section-1-content {
@@ -125,3 +131,94 @@ header {
   }
 }
 
+.section-2-grid {
+  padding: 0 64px;
+  
+  .section-2-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $black;
+    margin-bottom: $large-spacing;
+
+
+    a {
+      color: $black;
+      border: solid 1px $black;
+      padding: $small-spacing $main-spacing;
+      transition: all linear .2s;
+
+      
+        &:hover {
+          color:#b95cc6;
+          box-shadow: 8px 8px 2px 1px rgba(242, 169, 247, 0.466);
+          transform: translate(-4px, -4px);
+      }
+
+    }
+
+  }
+}
+
+.section-2-grid-gallery-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $large-spacing;
+
+  .gallery-item {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:hover {
+      color: black;
+    }
+
+    a {
+      bottom: 0;
+      position: absolute;
+      transform: translate(40%, -60%);
+      color: $white;
+
+   
+    }
+  }
+
+}
+
+// gallery images
+
+.deepearth {
+  background-image: url("/img/desktop/image-deep-earth.jpg");
+}
+
+.nightarcade {
+  background-image: url("/img/desktop/image-night-arcade.jpg");
+}
+
+.soccerteam {
+  background-image: url("/img/desktop/image-soccer-team.jpg");
+}
+
+.thegrid {
+  background-image: url("/img/desktop/image-grid.jpg");
+}
+
+.abovevr {
+  background-image: url("/img/desktop/image-from-above.jpg");
+}
+
+.pocketborealis {
+  background-image: url("/img/desktop/image-pocket-borealis.jpg");
+}
+
+.thecuriosity {
+  background-image: url("/img/desktop/image-curiosity.jpg");
+}
+
+.fisheye {
+  background-image: url("/img/desktop/image-fisheye.jpg");
+}

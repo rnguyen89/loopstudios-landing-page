@@ -10,10 +10,14 @@
 
 $title-font: "Josefin Sans", sans-serif;
 $body-font: "Alata", sans-serif;
+
+// Desktop font size
+
 $h1-size: 96px;
 $h2-size: 64px;
 $h3-size: 32px;
-$body-size: 15px;
+$body-size: 18px;
+$button-size: 24px;
 
 body {
   font-family: $body-font;
@@ -36,4 +40,15 @@ h1 {
 h2 {
   font-size: $h2-size;
   line-height: .9;
+}
+
+.section-2-header a {
+  font-size: $button-size;
+}
+
+.gallery-item a {
+  font-family: $title-font;
+  line-height: .9;
+  text-transform: uppercase;
+  font-size: $h3-size;
 }
