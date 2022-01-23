@@ -92,3 +92,38 @@ header {
 
   }
 }
+
+.section-1-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 0 64px;
+  margin: $hero-spacing 0;
+
+  .img-vr {
+    grid-column: 1/9;
+  }
+
+  .section-1-content {
+    color: $black;
+    grid-column: 6 / -1;
+    background-color: $white;
+    align-self: end;
+    padding: 72px 64px 0 64px;
+    z-index: 10;
+  }
+
+  .img-vr, .section-1-content {
+    grid-row: 1/2;
+  }
+
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  p {
+    color: $darker-gray;
+  }
+}
+
